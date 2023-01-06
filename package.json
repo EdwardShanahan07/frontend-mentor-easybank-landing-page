@@ -1,0 +1,23 @@
+{
+  "name": "easybank-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass ./src/scss/index.scss ./assets/css/style.css --w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardShanahan07/frontend-mentor-easybank-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardShanahan07/frontend-mentor-easybank-landing-page/issues"
+  },
+  "homepage": "https://github.com/EdwardShanahan07/frontend-mentor-easybank-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
