@@ -1,0 +1,7 @@
+// Resposnive Mixins
+
+@mixin responsiveDesktop {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
