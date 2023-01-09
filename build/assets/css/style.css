@@ -17,3 +17,23 @@ header {
   @media (min-width: 1000px) {
     header {
       padding: 3.2rem 16.5rem; } }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navbar .navbar__list {
+    display: none; }
+    @media (min-width: 1000px) {
+      .navbar .navbar__list {
+        display: block; } }
+  @media (min-width: 1000px) {
+    .navbar__open {
+      display: none; } }
+  .navbar__close {
+    display: none; }
+  .navbar .btn {
+    display: none; }
+    @media (min-width: 1000px) {
+      .navbar .btn {
+        display: block; } }

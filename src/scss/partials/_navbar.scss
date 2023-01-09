@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar__list {
+    display: none;
+
+    @include responsiveDesktop {
+      display: block;
+    }
+  }
+
+  &__open {
+    @include responsiveDesktop {
+      display: none;
+    }
+  }
+
+  &__close {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+
+    @include responsiveDesktop {
+      display: block;
+    }
+  }
+}
