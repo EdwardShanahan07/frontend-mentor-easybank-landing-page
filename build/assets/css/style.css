@@ -37,3 +37,11 @@ header {
     @media (min-width: 1000px) {
       .navbar .btn {
         display: block; } }
+
+.menu__line {
+  background-color: #2d314d;
+  width: 2.4rem;
+  height: 0.1rem;
+  display: block; }
+  .menu__line:not(:last-child) {
+    margin-bottom: 0.4rem; }

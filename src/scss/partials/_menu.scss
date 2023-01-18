@@ -1,0 +1,11 @@
+.menu {
+  &__line {
+    background-color: $ColorDarkBlue;
+    width: 2.4rem;
+    height: 0.1rem;
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
