@@ -38,10 +38,19 @@ header {
       .navbar .btn {
         display: block; } }
 
-.menu__line {
-  background-color: #2d314d;
-  width: 2.4rem;
-  height: 0.1rem;
-  display: block; }
-  .menu__line:not(:last-child) {
-    margin-bottom: 0.4rem; }
+.menu {
+  cursor: pointer; }
+  .menu__line {
+    transition: all 0.4s;
+    background-color: #2d314d;
+    width: 2.5rem;
+    height: 0.3rem;
+    display: block; }
+    .menu__line:not(:last-child) {
+      margin-bottom: 0.5rem; }
+  .menu.active .menu__line:nth-child(2) {
+    opacity: 0; }
+  .menu.active .menu__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); }
+  .menu.active .menu__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); }
