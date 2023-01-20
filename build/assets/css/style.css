@@ -27,6 +27,8 @@ header {
     @media (min-width: 1000px) {
       .navbar .navbar__list {
         display: block; } }
+    .navbar .navbar__list.toggle-list {
+      display: block; }
   @media (min-width: 1000px) {
     .navbar__open {
       display: none; } }

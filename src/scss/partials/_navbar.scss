@@ -9,6 +9,10 @@
     @include responsiveDesktop {
       display: block;
     }
+
+    &.toggle-list {
+      display: block;
+    }
   }
 
   &__open {
