@@ -1,7 +1,9 @@
 .navbar {
+  background-color: $ColorWhite;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 
   .navbar__list {
     display: none;
@@ -9,20 +11,6 @@
     @include responsiveDesktop {
       display: block;
     }
-
-    &.toggle-list {
-      display: block;
-    }
-  }
-
-  &__open {
-    @include responsiveDesktop {
-      display: none;
-    }
-  }
-
-  &__close {
-    display: none;
   }
 
   .btn {
@@ -30,6 +18,39 @@
 
     @include responsiveDesktop {
       display: block;
+    }
+  }
+
+  .menu {
+    cursor: pointer;
+
+    @include responsiveDesktop {
+      display: none;
+    }
+
+    &__line {
+      transition: all 0.4s;
+      background-color: $ColorDarkBlue;
+      width: 2.5rem;
+      height: 0.3rem;
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &.active {
+      .menu__line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu__line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      .menu__line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
     }
   }
 }
