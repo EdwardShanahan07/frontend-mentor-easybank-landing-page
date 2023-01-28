@@ -35,6 +35,8 @@ header {
   z-index: 100; }
   .navbar .navbar__list {
     display: none; }
+    .navbar .navbar__list.active {
+      display: block; }
     @media (min-width: 1000px) {
       .navbar .navbar__list {
         display: block; } }

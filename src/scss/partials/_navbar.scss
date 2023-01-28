@@ -8,6 +8,10 @@
   .navbar__list {
     display: none;
 
+    &.active {
+      display: block;
+    }
+
     @include responsiveDesktop {
       display: block;
     }
