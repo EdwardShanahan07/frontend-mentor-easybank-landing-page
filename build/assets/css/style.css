@@ -66,11 +66,6 @@ header {
           margin-bottom: 0.4rem; }
   header .overlay {
     visibility: hidden; }
-  header .fade-in {
-    animation: fadeIn; }
-
-.fade-in {
-  animation: fadeIn; }
 
 @keyframes fadeIn {
   from {

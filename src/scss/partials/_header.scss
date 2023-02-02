@@ -83,14 +83,6 @@ header {
   .overlay {
     visibility: hidden;
   }
-
-  .fade-in {
-    animation: fadeIn;
-  }
-}
-
-.fade-in {
-  animation: fadeIn;
 }
 
 @keyframes fadeIn {
