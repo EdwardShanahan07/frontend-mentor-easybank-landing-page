@@ -18,23 +18,12 @@ header {
   @media (min-width: 1000px) {
     header {
       padding: 3.2rem 16.5rem; } }
-  header.active .menu__line:nth-child(2) {
+  header.open .menu__line:nth-child(2) {
     opacity: 0; }
-  header.active .menu__line:nth-child(1) {
+  header.open .menu__line:nth-child(1) {
     transform: translateY(5px) rotate(45deg); }
-  header.active .menu__line:nth-child(3) {
+  header.open .menu__line:nth-child(3) {
     transform: translateY(-5px) rotate(-45deg); }
-  header.active .overlay {
-    background: linear-gradient(180deg, #2d314d 0%, rgba(45, 49, 77, 0.0001) 100%);
-    position: fixed;
-    top: 6.6rem;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    visibility: visible;
-    opacity: 0;
-    animation: fadeIn 300ms ease-in forwards; }
   header .navbar {
     background-color: #ffffff;
     display: flex;
@@ -65,7 +54,21 @@ header {
         header .navbar .menu__line:not(:last-child) {
           margin-bottom: 0.4rem; }
   header .overlay {
-    visibility: hidden; }
+    background: linear-gradient(180deg, #2d314d 0%, rgba(45, 49, 77, 0.0001) 100%);
+    position: fixed;
+    top: 6.6rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+    opacity: 0; }
+
+.fade-in {
+  animation: fadeIn 300ms ease-in-out forwards; }
+
+.fade-out {
+  animation: fadeOut 300ms ease-in-out forwards; }
 
 @keyframes fadeIn {
   from {
@@ -77,8 +80,11 @@ header {
 
 @keyframes fadeOut {
   from {
-    opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    opacity: 1; }
+  99% {
+    visibility: visible;
+    opacity: 0; }
   to {
-    opacity: 1;
-    visibility: hidden; } }
+    visibility: hidden;
+    opacity: 0; } }
